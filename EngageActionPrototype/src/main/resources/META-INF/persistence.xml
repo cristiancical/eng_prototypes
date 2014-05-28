@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+    version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="persistenceUnit"
+        transaction-type="RESOURCE_LOCAL">
+        <class>com.cristian.engage.entities.ActionEntity</class>
+        <class>com.cristian.engage.entities.MacroEntity</class>
+        <properties>
+    	<property name="hibernate.show_sql" value="true"/>
+  		<property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+  		<property name="hibernate.connection.password" value="Softvision81" />
+  		<property name="hibernate.connection.url" value="jdbc:sqlserver://k7iz1xw1os.database.windows.net:1433;database=actionsdatabase" />
+  		<property name="hibernate.connection.username" value="danielcatadb@k7iz1xw1os" />
+  		<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2008Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
