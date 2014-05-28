@@ -14,6 +14,9 @@ Technical details:
 1. Install steps:
 - run mvn clean install
 - run mvn eclipse:eclipse
+- add Microsoft JDBC Driver 4.0 for SQL server to build path; you have two ways to do this:
+	- install Azure plugin for Eclipse and add "Microsoft JDBC Driver 4.0 for SQL server" from the libraries list to build path, or:
+	- add sqljdbc4.jar (from lib directory) to build path
 - import project into eclipse
 - run MacroTest.java as Junit
 
